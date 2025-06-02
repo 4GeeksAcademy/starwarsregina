@@ -13,7 +13,7 @@ const PlanetDetails = () => {
     return (
         <div className="d-flex flex-column align-items-center">
             <h1 className="main-title">{planet && planet.name}</h1>
-            <div className="card" style={{ width: "40rem", backgroundColor: "grey" }}>
+            <div className="card" style={{ width: "40rem", backgroundColor: "white" }}>
                 <img src={`https://raw.githubusercontent.com/breatheco-de/swapi-images/refs/heads/master/public/images/planets/${uid}.jpg`} className="card-img-top" alt="..." />
                 <div className="car3d-body">
                     <p className="card-text p-2 black-font">

@@ -13,7 +13,7 @@ const VehicleDetails = () => {
     return (
         <div className="d-flex flex-column align-items-center">
             <h1 className="main-title">{vehicle && vehicle.name}</h1>
-            <div className="card" style={{ width: "45rem", backgroundColor: "grey" }}>
+            <div className="card" style={{ width: "45rem", backgroundColor: "white" }}>
                 <img src={`https://raw.githubusercontent.com/breatheco-de/swapi-images/refs/heads/master/public/images/vehicles/${uid}.jpg`} className="card-img-top" alt="..." />
                 <div className="car3d-body">
                     <p className="card-text p-2 black-font">

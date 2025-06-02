@@ -51,34 +51,34 @@ export const Home = () => {
 	}, [])
 
 	return (
-		<div className="text-center mt-5">
-			<div className="container mt-2">
-				<h2 className="main-title">Characters</h2>
-				<hr/>
-			</div>
-			<div className="container py-2 overflow-auto">
-				<div className="d-flex flex-row flex-nowrap">
-					{store.characters && store.characters.length > 0 && store.characters.map(character => <CharacterCard name={character.name} key={character.uid} uid={character.uid}/> )}
-				</div>
-			</div>
-			<div className="container mt-2">
-				<h2 className="main-title">Planets</h2>
-				<hr/>
-			</div>
-			<div className="container py-2 overflow-auto">
-				<div className="d-flex flex-row flex-nowrap">
-					{store.planets && store.planets.length > 0 && store.planets.map(planet => <PlanetCard name={planet.name} key={planet.uid} uid={planet.uid}/> )}
-				</div>
-			</div>
-			<div className="container mt-2">
-				<h2 className="main-title">Vehicles</h2>
-				<hr/>
-			</div>
-			<div className="container py-2 overflow-auto">
-				<div className="d-flex flex-row flex-nowrap">
-					{store.vehicles && store.vehicles.length > 0 && store.vehicles.map(vehicle => <VehicleCard name={vehicle.name} key={vehicle.uid} uid={vehicle.uid}/> )}
-				</div>
-			</div>
-		</div>
+        <div className="text-center mt-5">
+            <div className="container mt-2">
+                <h2 className="main-title" style={{ color: "red" }}>Characters</h2>
+                <hr/>
+            </div>
+            <div className="container py-2 overflow-auto">
+                <div className="d-flex flex-row flex-nowrap">
+                    {store.characters && store.characters.length > 0 && store.characters.map(character => <CharacterCard name={character.name} key={character.uid} uid={character.uid}/> )}
+                </div>
+            </div>
+            <div className="container mt-2">
+                <h2 className="main-title" style={{ color: "red" }}>Planets</h2>
+                <hr/>
+            </div>
+            <div className="container py-2 overflow-auto">
+                <div className="d-flex flex-row flex-nowrap">
+                    {store.planets && store.planets.length > 0 && store.planets.map(planet => <PlanetCard name={planet.name} key={planet.uid} uid={planet.uid}/> )}
+                </div>
+            </div>
+            <div className="container mt-2">
+                <h2 className="main-title" style={{ color: "red" }}>Vehicles</h2>
+                <hr/>
+            </div>
+            <div className="container py-2 overflow-auto">
+                <div className="d-flex flex-row flex-nowrap">
+                    {store.vehicles && store.vehicles.length > 0 && store.vehicles.map(vehicle => <VehicleCard name={vehicle.name} key={vehicle.uid} uid={vehicle.uid}/> )}
+                </div>
+            </div>
+        </div>
 	);
-}; 
+};
